@@ -2,6 +2,7 @@
 -- Metric: sum_total_2012, sum_total_2013, perc
 -- Description: Compares monthly revenue for 2012 and 2013, calculates percent change per month
 -- Grain: month level
+-- Tables used: invoice
 
 WITH year_2012 AS
   (SELECT EXTRACT(YEAR FROM CAST(invoice_date AS date)) AS YEAR,
