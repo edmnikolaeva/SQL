@@ -1,8 +1,8 @@
--- Business task: Top-selling Products
--- Metric: Total Quantity Sold
--- Description: Ranks products by total sales
--- Grain: product level
--- Tables used: product, product_order
+-- Business task: Popular Categories
+-- Metric: Total Orders per Category
+-- Description: Finds the most frequently ordered product category in summer 2022
+-- Grain: category level
+-- Tables used: user_order, product, category
 
 SELECT 
     c.category_name,
