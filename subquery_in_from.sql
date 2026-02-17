@@ -1,8 +1,9 @@
--- Business task: Inventory Revenue by Country
--- Metric: SUM(AVG(order_total)) for selected months
--- Description: Calculates the sum of average order totals for months 2, 5, 7, 10 in 2009, filtered by country
+-- Business task: Calculate monthly average order totals for selected months in 2009
+-- Metric: SUM(AVG(order_total)) for Feb, May, Jul, Oct 2009
+-- Description: Calculates the sum of average invoice totals per country for selected months
 -- Grain: country / month level
 -- Tables used: invoice
+
 
 SELECT billing_country
 FROM (SELECT billing_country,
