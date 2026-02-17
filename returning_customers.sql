@@ -1,3 +1,8 @@
+-- Business task: Returning Customers
+-- Metric: Repeat Orders Count
+-- Description: Identifies customers with more than one order
+-- Grain: user level
+
 SELECT 
     uod.surname,
     uod.name,
