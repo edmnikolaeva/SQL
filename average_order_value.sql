@@ -1,3 +1,8 @@
+-- Business task: Average Order Value
+-- Metric: AOV
+-- Description: Calculates average revenue per order
+-- Grain: order level
+
 SELECT 
     AVG(sum) AS avg_check_summer_2022
 FROM 
