@@ -15,10 +15,14 @@ The examples cover:
 
 ### 🧭 Business Context
 
-**Domain:** online fashion retail  
+**Domain:** online clothing store  
 **Scope:** web store analytics  
 **Goal:** demonstrate SQL usage for business decision support  
 **Data grain:** order / order item level depending on query
+
+**Problem:** business questions & pain points, e.g., low stock, average order value, unsold products  
+**Solution:** SQL queries to extract metrics, perform aggregations, and identify insights  
+**Result / Impact:** provided actionable data supporting decision-making for inventory, marketing, and customer retention
 
 ---
 
