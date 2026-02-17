@@ -19,9 +19,18 @@ The examples cover:
 **Goal:** Demonstrate advanced SQL techniques for business insights  
 **Data grain:** order / invoice / content / category level depending on query
 
-**Problem:** Identify patterns, metrics, and insights from sales and user activity data  
-**Solution:** SQL queries using subqueries, UNIONs, and CTEs to extract insights  
-**Result / Impact:** Provides examples of advanced SQL usage for operational reporting, decision-making, and product insights
+**Problem:**
+- Lack of visibility into country-level revenue dynamics across time periods  
+- Difficulty identifying the most profitable content segments  
+- No clear month-over-month revenue comparison for trend analysis  
+
+**Solution:**  
+- Advanced SQL queries using subqueries and CTEs to aggregate revenue, segment content performance, and compare time periods
+
+**Result / Impact:**
+- Identified top-performing countries (e.g., USA — 19 invoices, Canada — 11)  
+- Revealed content categories with highest engagement and rental value  
+- Enabled month-over-month revenue analysis (e.g., +32% growth in November)
 
 ---
 
