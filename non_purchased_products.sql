@@ -1,7 +1,8 @@
 -- Business task: Non-purchased Products
--- Metric: N/A
--- Description: Finds products that have never been purchased
+-- Metric: Product Purchase Count
+-- Description: Finds products that have never been purchased by any user
 -- Grain: product level
+-- Tables used: product, product_order
 
 SELECT 
     p.product_name,
