@@ -1,7 +1,8 @@
 -- Business task: Inventory Balance
--- Metric: Stock Quantity
--- Description: Lists products with low stock for replenishment
+-- Metric: Stock Availability
+-- Description: Identifies low-stock products to support replenishment
 -- Grain: product level
+-- Tables used: product
 
 SELECT 
     product_name,
