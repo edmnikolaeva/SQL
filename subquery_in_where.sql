@@ -2,6 +2,7 @@
 -- Metric: AVG(rental_rate), AVG(film_length)
 -- Description: Finds film categories with the highest average rental rate and their average duration
 -- Grain: category level
+-- Tables used: movie, category, film_category
 
 SELECT c.name,
        AVG(length)
