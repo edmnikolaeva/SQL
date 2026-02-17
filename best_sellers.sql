@@ -1,7 +1,8 @@
--- Business task: Best-selling Products
+-- Business task: Top-selling Products
 -- Metric: Total Quantity Sold
--- Description: Ranks products by total quantity sold and identifies top 10 items
+-- Description: Ranks products by total sales volume
 -- Grain: product level
+-- Tables used: product, product_order
 
 SELECT 
     p.product_name,
