@@ -2,6 +2,7 @@
 -- Metric: total_invoice, total_customer
 -- Description: Identifies the year with maximum summer revenue and analyzes order counts and customer counts per country
 -- Grain: country level
+-- Tables used: invoice, client
 
 SELECT i.country,
        total_invoice,
