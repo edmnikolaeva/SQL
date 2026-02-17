@@ -1,7 +1,8 @@
 -- Business task: Returning Customers
--- Metric: Repeat Orders Count
--- Description: Identifies customers with more than one order
--- Grain: user level
+-- Metric: Number of Orders per Customer
+-- Description: Identifies customers with more than one order to analyze repeat purchase behavior
+-- Grain: customer / order level
+-- Tables used: user_order, user_order_detail
 
 SELECT 
     uod.surname,
