@@ -2,6 +2,7 @@
 -- Metric: Total Quantity Sold
 -- Description: Ranks products by total sales
 -- Grain: product level
+-- Tables used: product, product_order
 
 SELECT 
     c.category_name,
