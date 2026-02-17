@@ -2,6 +2,7 @@
 -- Metric: SUM(AVG(order_total)) for selected months
 -- Description: Calculates the sum of average order totals for months 2, 5, 7, 10 in 2009, filtered by country
 -- Grain: country / month level
+-- Tables used: invoice
 
 SELECT billing_country
 FROM (SELECT billing_country,
