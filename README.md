@@ -1,5 +1,5 @@
 # 🗄️ SQL for System & Business Analysis
-- SQL examples showing how a System Analyst solves business and analytical tasks using relational data
+SQL examples showing how a System Analyst solves business and analytical tasks using relational data
 
 ---
 
@@ -25,3 +25,6 @@
 - performs data-driven analysis  
 - supports business decisions
 
+---
+
+### Explore [Data Modeling examples](https://github.com/edmnikolaeva/ER) using ER diagrams demonstrating entity relationships and database structure
