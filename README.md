@@ -1,40 +1,65 @@
-# Advanced SQL Examples
-- This repository demonstrates advanced SQL techniques for analytics on a streaming service
-- It includes examples of subqueries in FROM and WHERE clauses, subqueries w. join operations, and common table expressions (CTEs)
-- Each query is documented with business context, metric definitions, and data grain
+# ⚙️ SQL: Advanced Streaming Analytics  
 
-The examples cover:
+<table>
+<tr>
+<td>
 
-- [subqueries in FROM](https://github.com/edmnikolaeva/SQL/blob/advanced_sql/subquery_in_from.sql)
-- [subqueries in WHERE](https://github.com/edmnikolaeva/SQL/blob/advanced_sql/subquery_in_where.sql)
-- [subqueries & join](https://github.com/edmnikolaeva/SQL/blob/advanced_sql/join_subqueries.sql)
-- [common table expressions (CTE)](https://github.com/edmnikolaeva/SQL/blob/advanced_sql/common_table_expressions.sql)
+Business-oriented advanced SQL analytics for a digital streaming service.  
+The repository provides analytical queries designed to extract revenue, customer, and content performance insights using subqueries and common table expressions (CTEs).
+
+</td>
+<td width="220">
+<img src="https://github.com/edmnikolaeva/SQL/blob/advanced_sql/sql_sample.png" 
+     alt="Visual Anchor — Main Screen Prototype" 
+     width="200"/>
+</td>
+</tr>
+</table>
+
+---
+
+### 🧩 Main Artifacts
+
+- 👉 [Subquery in FROM — Country Revenue Aggregation](https://github.com/edmnikolaeva/SQL/blob/advanced_sql/subquery_in_from.sql)
+- 👉 [Subquery in WHERE — Top Rental Categories](https://github.com/edmnikolaeva/SQL/blob/advanced_sql/subquery_in_where.sql)
+- 👉 [Subqueries & Join — Peak Summer Revenue](https://github.com/edmnikolaeva/SQL/blob/advanced_sql/join_subqueries.sql)
+- 👉 [Common Table Expressions (CTE) — YoY Monthly Revenue](https://github.com/edmnikolaeva/SQL/blob/advanced_sql/common_table_expressions.sql)
 
 ---
 
 ### 🧭 Business Context
 
-**Domain:** Streaming service (movies, music)  
-**Scope:** Analytics queries on invoices, customers, and content categories  
-**Goal:** Demonstrate advanced SQL techniques for business insights  
-**Data grain:** order / invoice / content / category level depending on query
+- **Domain:** Digital streaming service
 
-**Problem:**
-- Lack of visibility into country-level revenue dynamics across time periods  
-- Difficulty identifying the most profitable content segments  
-- No clear month-over-month revenue comparison for trend analysis  
+- **Scope**
+  - Revenue analytics
+  - Customer activity analysis
+  - Content category performance
+  - Period-over-period comparison
 
-**Solution:**  
-- Advanced SQL queries using subqueries and CTEs to aggregate revenue, segment content performance, and compare time periods
-
-**Result / Impact:**
-- Identified top-performing countries (e.g., USA — 19 invoices, Canada — 11)  
-- Revealed content categories with highest engagement and rental value  
-- Enabled month-over-month revenue analysis (e.g., +32% growth in November)
+- **Goal:** Provide advanced SQL-based analytical insights to support revenue and content performance analysis
 
 ---
 
-### 📂 SQL Examples
+- **Business Pain Points**
+  - Limited visibility into country-level revenue dynamics
+  - Difficulty identifying high-performing content segments
+  - Lack of structured month-over-month revenue comparison
+
+- **Solution:** Advanced SQL queries using subqueries and CTEs to aggregate revenue, segment content performance, and compare time periods
+
+---
+
+### ✅ Key Outcomes
+
+- Top-performing countries identified by invoice activity  
+- High-value content categories detected  
+- Peak summer revenue year determined  
+- Month-over-month revenue comparison calculated
+ 
+---
+
+### 📂 SQL Query
 
 1. 👉 [Subquery in FROM](https://github.com/edmnikolaeva/SQL/blob/advanced_sql/subquery_in_from.sql)  
    - Calculates monthly average orders for selected months (Feb, May, Jul, Oct 2009) and sums them by country  
@@ -64,32 +89,20 @@ The examples cover:
 2. **Highest Average Rental Rate by Rating (Subquery in WHERE)**  
    - **Metric:** Average film length per category  
    - **Grain:** category level  
-   - **Sample Result:** 
-     - Family — 114.56 min  
-     - Games — 126.2 min  
-     - Animation — 102.27 min  
-     - …(other categories)  
+   - **Sample Result:** Family — 114.56 min  
 
 3. **Peak Summer Revenue by Country (Subqueries + Join)**  
    - **Metrics:** total_invoice, total_customer  
    - **Grain:** country level  
-   - **Sample Result:** 
-     - USA — 19 invoices, 13 customers  
-     - Canada — 11 invoices, 8 customers  
-     - France — 8 invoices, 5 customers  
-     - …(top countries)  
-
+   - **Sample Result:** USA — 19 invoices, 13 customers  
+ 
 4. **Monthly Revenue Comparison 2012 vs 2013 (CTE)**  
    - **Metrics:** sum_total_2012, sum_total_2013, perc  
    - **Grain:** month level  
-   - **Sample Result:** 
-     - Month 1: 37.62 / 37.62 → 0% change  
-     - Month 2: 37.62 / 27.72 → -26%  
-     - Month 4: 37.62 / 33.66 → -11%  
-     - Month 11: 37.62 / 49.62 → +32%  
+   - **Sample Result:** Month 1: 37.62 / 37.62 → 0% change  
 
 ---
 
-### 🗂️ Data Model
+### 🔗 Related Artifact
 - 👉 [Physical data model of the streaming service](https://github.com/edmnikolaeva/SQL/blob/advanced_sql/ER_streaming_s.png)
 
